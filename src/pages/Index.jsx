@@ -3,7 +3,6 @@ import { useQuery } from "@tanstack/react-query";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import WeatherModule from "@/components/WeatherModule";
 import StockModule from "@/components/StockModule";
 
 const fetchTopStories = async () => {
@@ -83,7 +82,6 @@ const Index = () => {
           )}
         </div>
         <div className="space-y-6">
-          <WeatherModule />
           <StockModule />
         </div>
       </div>
