@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import StockModule from "@/components/StockModule";
-import CryptoModule from "@/components/CryptoModule";
 
 const fetchTopStories = async () => {
   const response = await fetch("https://hacker-news.firebaseio.com/v0/topstories.json");
@@ -84,7 +83,6 @@ const Index = () => {
         </div>
         <div className="space-y-6">
           <StockModule />
-          <CryptoModule />
         </div>
       </div>
     </div>
