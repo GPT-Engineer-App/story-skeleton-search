@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import WeatherModule from "@/components/WeatherModule";
+import StockModule from "@/components/StockModule";
 
 const fetchTopStories = async () => {
   const response = await fetch("https://hacker-news.firebaseio.com/v0/topstories.json");
@@ -81,8 +82,9 @@ const Index = () => {
             </ul>
           )}
         </div>
-        <div>
+        <div className="space-y-6">
           <WeatherModule />
+          <StockModule />
         </div>
       </div>
     </div>
