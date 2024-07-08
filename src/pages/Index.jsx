@@ -64,7 +64,7 @@ const Index = () => {
         <ul className="space-y-4">
           {filteredStories.map((story) => (
             <li key={story.id} className="border p-4 rounded-md">
-              <h2 className="text-xl font-semibold">{story.title}</h2>
+              <h2 className="text-xl font-semibold text-red-600">{story.title}</h2>
               <p className="text-sm text-gray-500">Upvotes: {story.score}</p>
               <Button
                 variant="link"
